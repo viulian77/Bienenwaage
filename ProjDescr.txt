@@ -1,0 +1,8 @@
+This is a projet for reading Beehive Parameters (Weight, Temp, Hum) and write them onto a SD Card and/or send the over a LoRaWan so it can be seen in realtime from home.
+The project runs on Arduino Uno with 4 Modules:
+    - 4 Weight sensors in a wheastone bridge and connected over a ADC
+    - a RTC DS1307 to have a realtime measurement basis
+    - a LoRaWan shield
+    - SD card shield (the Ehernet port on the shild will not be used)
+
+A part of this project is also documented on ww-iv.webnode.com
