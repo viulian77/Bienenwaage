@@ -166,18 +166,20 @@ void setup() {
 
         /*HX711 Start Setup  */
   Serial.begin(9600);
+  /*
   Serial.println("HX711 Calibration");
   Serial.println("Remove all weight from scale");
   Serial.println("After readings begin, place known weight on scale");
   Serial.println("Press a,s,d,f to increase calibration factor by 10,100,1000,10000 respectively");
   Serial.println("Press z,x,c,v to decrease calibration factor by 10,100,1000,10000 respectively");
-  Serial.println("Press t for tare");
+  Serial.println("Press t for tare");   */
   scale.set_scale();
   scale.tare(); //Reset the scale to 0
 
   long zero_factor = scale.read_average(); //Get a baseline reading
+  /*
   Serial.print("Zero factor: "); //This can be used to remove the need to tare the scale. Useful in permanent scale projects.
-  Serial.println(zero_factor);
+  Serial.println(zero_factor);  */
       /*HX711 End Setup */
 }
 
@@ -209,7 +211,7 @@ void loop() {
   Serial.print(" kg"); //Change this to kg and re-adjust the calibration factor if you follow SI units like a sane person
   Serial.print(" calibration_factor: ");
   Serial.print(calibration_factor);  */
-  Serial.println();
+  /*Serial.println(); */
 
   if(Serial.available())
   {
