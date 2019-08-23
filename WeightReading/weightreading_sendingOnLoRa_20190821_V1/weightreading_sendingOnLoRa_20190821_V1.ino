@@ -194,6 +194,7 @@ void loop() {
 
   
     unsigned long l = (unsigned long) ( scale.get_units() * 100 );
+    Serial.println(l);
   
      mydata[3] = l & 0x00FF;
      mydata[2] = ( l >> 8 ) & 0x00FF ;
