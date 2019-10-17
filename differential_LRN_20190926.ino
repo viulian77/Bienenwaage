@@ -3,8 +3,8 @@
 #include <Adafruit_ADS1015.h>
 #include <TheThingsNetwork.h>
 
-const char *appEui = "70B3D57ED0011F10";
-const char *appKey = "78A02F658605F6DF3ACE5D398D6D2010";
+const char *appEui = "";
+const char *appKey = "";
 const uint8_t sendeCounter = 150; //150 x 8 = 20 min sendeinterval
 uint8_t counter = 0;
 #define freqPlan TTN_FP_EU868
